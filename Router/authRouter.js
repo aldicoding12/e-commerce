@@ -5,10 +5,10 @@ import * as user from "../controllers/userControllers.js";
 const Route = express.Router(); // Menggunakan express.Router()
 
 // Rute untuk '/register'
-Route.post("/data/register", Auth.usersRegistration);
+Route.post("/register", Auth.usersRegistration);
 
 // Rute untuk '/login'
-Route.post("/data/login", Auth.usersLogin);
+Route.post("/login", Auth.usersLogin);
 
 Route.post("/logout", protectedMiddleware, Auth.userLogout);
 
