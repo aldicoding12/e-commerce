@@ -22,7 +22,7 @@ app.use(cookieParser());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("./public"));
 
-app.use("/users", authRouter);
+app.use("/data/users", authRouter);
 app.use("/data", productRouter);
 app.use("/data", orderProduct);
 
